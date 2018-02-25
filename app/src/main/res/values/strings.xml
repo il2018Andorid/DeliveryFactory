@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Delivery Factory</string>
+    <string name="title_activity_signup">Signup</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="category">
+        <item>Select Category</item>
+        <item>Cat1</item>
+        <item>Cat2</item>
+        <item>Cat3</item>
+    </string-array>
+
+    <string name="pound_currency">\u00a3</string>
+    <string name="title_activity_dashboard_vendor">DashboardVendor</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dashboad_vendor">DashboadVendor</string>
+</resources>

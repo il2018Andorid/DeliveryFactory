@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:background="@color/white"
+android:orientation="vertical">
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/sw_layout"
+        android:layout_above="@+id/footer"
+        android:orientation="vertical">
+        //your UI...
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.delivery.factory.deliveryfactory.LoginLocum">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="right"
+                android:src="@drawable/info"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TIL_emailid"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.delivery.factory.deliveryfactory.customviews.UserEditText
+                    android:tag="100"
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email ID"
+                    android:textSize="21sp"
+                    android:padding="10dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:layout_margin="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TIL_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.delivery.factory.deliveryfactory.customviews.UserEditText
+                    android:tag="100"
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textSize="21sp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:layout_margin="10dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_sigin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:text="Sign in"
+                android:textSize="21sp"
+                android:layout_margin="10dp"/>
+
+            <com.delivery.factory.deliveryfactory.customviews.UserTextView
+                android:tag="100"
+                android:id="@+id/tv_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="21sp"
+                android:text="Register as Locum" />
+
+            <com.delivery.factory.deliveryfactory.customviews.UserTextView
+                android:tag="100"
+                android:id="@+id/tv_forgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:text="Forgot password?" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="2dp"
+        android:orientation="horizontal" >
+
+        <com.delivery.factory.deliveryfactory.customviews.UserTextView
+            android:tag="100"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_email_24dp"
+            android:drawablePadding="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="info@deliveryfactory.com" />
+
+        <com.delivery.factory.deliveryfactory.customviews.UserTextView
+            android:tag="100"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_call_24dp"
+            android:drawablePadding="3dp"
+            android:layout_marginBottom="5dp"
+            android:text="  +(0)1 1234 1234" />
+    </LinearLayout>
+
+</RelativeLayout>
